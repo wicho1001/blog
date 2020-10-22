@@ -1,9 +1,13 @@
 import React from 'react';
-import link from "next/link"; 
+import Layout from '../components/shared/Layout';
 
 function IndexPage(props) {
   return (
-    <div className="py-20 bg-primary-500 text-3xl font-exo">Hola nundo</div>
+    <section className="w-full">
+      <Layout>
+        <h1>hola mundo</h1>
+      </Layout>
+    </section>
   )
 };
 
