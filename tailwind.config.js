@@ -52,7 +52,8 @@ module.exports = {
     fontFamily: {
       'exo': ['Exo', 'sans-serif'],
       'duru': ['Duru Sans', 'sans-serif'],
-      'forum': ['Forum', 'cursive']
+      'rubik': ['Rubik', 'sans-serif'],
+
     },
     fontSize: {
       xs: '12px',
