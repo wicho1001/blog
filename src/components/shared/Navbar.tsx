@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 const Navbar = () => {
 
   return (
-    <section className="h-30 px-6 flex justify-between items-center shadow-2xl">
+    <section className="sticky bg-white top-0 h-20 px-6 flex justify-between items-center shadow-2xl z-2">
       <img src="/logo.png" alt="" className="h-15"/>
       <section className="flex items-center w-1/3 justify-between">
         <a className="text-surface-900 font-duru" href="/services">Services</a>
