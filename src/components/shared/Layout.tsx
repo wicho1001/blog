@@ -8,7 +8,7 @@ const Layout = (props) => {
       <Navbar></Navbar>
       <div className="flex flex-col flex-grow">
         {props.children}
-        <section className="self-end">
+        <section className="w-full self-end">
           <Footer></Footer>
         </section>
       </div>
