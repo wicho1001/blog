@@ -5,9 +5,9 @@ function IndexPage(props) {
   return (
     <section className="w-full">
       <Layout className="">
-        <section className="w-full">
+        <section className="w-screen overflow-x-hidden">
           <section className="relative flex items-center h-container">
-            <img className="absolute top-0 right-0 -z-1" src="./polygon1.svg" alt=""/>
+            <img className="absolute top-0 right-0 -z-1" src="./polygon_one.svg" alt=""/>
             <section className="w-4/5 mx-auto">
               <div className="w-3/5 flex flex-col"> 
                 <h1 className="flex flex-col text-5xl text-secondary-900 font-exo font-bold">Your Business Needs <span>Our Software Solutions</span> 
@@ -24,7 +24,9 @@ function IndexPage(props) {
           </section>
 
           <section className="h-container w-full relative">
-            <img className="absolute top-0 left-0 -mt-60" src="./polygon_two.svg" alt=""/>
+            <img className="absolute top-0 left-0 -mt-60 ml-5" src="./polygon_two.svg" alt=""/>
+            <img className="absolute bottom-0 right-0 -mr-22 -mb-80" src="./polygon_three.svg" alt=""/>
+            <img className="absolute bottom-0 left-0 -mb-65" src="./polygon_four.svg" alt=""/>
             <section className="w-4/5 mx-auto grid grid-cols-5 grid-rows-2 py-6 px-3 gap-6 mb-15">
               <div className="flex flex-col row-span-1 col-span-5 bg-secondary-500 shadow-xl px-10 py-7 rounded-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer">
                 <p className="text-center text-primary-50 font-exo bold text-5xl">Development</p>
