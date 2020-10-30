@@ -4,12 +4,14 @@ import Footer from './Footer';
 
 const Layout = (props) => {
   return (
-    <section className="w-full flex flex-col h-screen">
+    <section className="w-full flex flex-col">
       <Navbar></Navbar>
-      <div className="flex-grow overflow-y-scroll">
+      <div className="flex flex-col flex-grow">
         {props.children}
+        <section className="w-full self-end">
+          <Footer></Footer>
+        </section>
       </div>
-      <Footer></Footer>
     </section>
   )
 }
