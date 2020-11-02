@@ -5,7 +5,7 @@ function IndexPage(props) {
   return (
     <section className="w-full">
       <Layout className="">
-        <section className="w-screen overflow-x-hidden">
+        <section className="overflow-x-hidden">
           <section className="relative flex items-center h-container">
             <img className="absolute top-0 right-0 -z-1" src="./polygon_one.svg" alt=""/>
             <section className="w-4/5 mx-auto">
@@ -17,7 +17,7 @@ function IndexPage(props) {
                   salkjfj quis nostrud exrertiacion ulamco laboris nisi ut alquipo ex ea comodo consewaus taosijd intere
                   ajsljl loca in reprehenderit in voulpateate velt esse cillum dolores eu tugiat nuila pariatur"
                   </p>
-                  <a href="Learnmore.js" className="pt-4 self-end font-rubik text-lg text-primary-500">Learn More --{">"}</a>
+                  <a href="Learnmore.js" className="flex items-center pt-4 self-end font-rubik text-lg text-primary-500">Learn More <i className="icon-arrow-right2 text-lg ml-2"></i></a>
                 </div>
               </div>
             </section>
