@@ -7,7 +7,7 @@ function IndexPage(props) {
       <Layout className="">
         <section className="overflow-x-hidden">
           <section className="relative flex items-center h-container">
-            <img className="absolute top-0 right-0 -z-1" src="./polygon_one.svg" alt=""/>
+            <img className="absolute top-0 right-0 -z-1 -mr-10" src="./polygon_one.svg" alt=""/>
             <section className="w-4/5 mx-auto">
               <div className="w-3/5 flex flex-col"> 
                 <h1 className="flex flex-col text-5xl text-secondary-900 font-exo font-bold">Your Business Needs <span>Our Software Solutions</span> 
