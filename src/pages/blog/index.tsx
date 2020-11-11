@@ -13,7 +13,7 @@ const Index = () => {
           <img className="absolute bottom-0 left-0 -z-1 -mb-54" src="./star_two.svg" alt=""/>
           <img className="absolute bottom-0 right-0 -z-1 -mt-80 mr-35" src="./star_three.svg" alt=""/>
           <section className="flex mx-auto items-center">
-            <div className="flex flex-col">
+            <div className="w-1/3 flex flex-col">
               <p className="text-5xl text-secondary-700 font-exo font-bold">
                 We Write For Future
               </p>
