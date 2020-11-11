@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = () => {
   return (
-    <section className="flex flex-col py-6 px-4 shadow-md col-span-1 rounded-2 hover:bg-surface-100 cursor-pointer">
+    <section className="flex flex-col py-6 px-4 shadow-md col-span-1 rounded-2 hover:bg-surface-100 bg-white cursor-pointer">
       <div className="flex items-center">
         <img className="h-8 w-8 rounded mr-3" src="https://via.placeholder.com/150" alt=""/>
         <p className="font-duru text-surface-800">Php development</p>
