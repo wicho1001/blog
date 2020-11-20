@@ -236,6 +236,9 @@ module.exports = {
       '2': '8',
       '3': '12'
     },
+    textFillColor: theme => theme('colors'),
+    textStrokeColor: theme => theme('colors'),
+    textStrokeWidth: theme => theme('spacing'),
   },
   variants: {
     accessibility: ['responsive', 'focus'],
@@ -349,12 +352,16 @@ module.exports = {
     transitionTimingFunction: ['responsive'],
     transitionDuration: ['responsive', 'hover', 'focus'],
     transitionDelay: ['responsive'],
-    animation: ['responsive','hover']
+    animation: ['responsive','hover'],
+    textFillColor: ['responsive'],
+    textStrokeColor: ['responsive'],
+    textStrokeWidth: ['responsive'],
   },
   future: {
     removeDeprecatedGapUtilities: true,
   },
   plugins: [
     require('@tailwindcss/typography'),
+    require('tailwindcss-text-fill-stroke')(),
   ]
 }
