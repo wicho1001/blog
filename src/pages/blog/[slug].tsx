@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../../components/shared/Layout';
 import markdownToHtml, { getAllPosts, getPost } from '../../lib/api'
 import { DiscussionEmbed } from "disqus-react"
+import { useRouter } from 'next/router';
 
 
 
@@ -12,11 +13,18 @@ const Post = (props) => {
     identifier: props.id,
     title: props.title || ''
   }
+ 
+  const router= useRouter();
+    if(router.isFallback){
+      return <div>Is loading</div>
+    }
+
   return (
     <Layout>
       <div className="flex flex-col w-10/12 mx-auto items-center relative mt-20 mb-10">
         <p className="capitalize xs:text-4xl md:text-6xl font-exo text-white text-stroke-secondary-500 text-stroke-px absolute -z-1 xs:-mt-3 md:-mt-11">{props.title}</p>
         <p className="capitalize text-4xl font-exo text-secondary-800">{props.title}</p>
+        <p className="capitalize text-4xl font-exo text-secondary-800">{props.fecha}</p>
         <div className="relative w-full">
           <img className="w-full object-cover xs:h-70 md:h-100 rounded-2 mt-6" src={props.featured_image} alt=""/>
           <img className="absolute bottom-0 transform xs:-ml-25 md:-ml-11 xs:-mb-28 md:-mb-8 -z-1 xs:scale-50 md:scale-100" src="../Dot_L.svg" alt=""/>
@@ -41,22 +49,28 @@ const Post = (props) => {
 export default Post;
 
 export async function getStaticProps({ params }) {
+  //console.log("params: ",params);
   const post: any = getPost(params.slug);
+  
   const contentUpdated: any = await markdownToHtml(post.content);
+  //console.log("content updated ", contentUpdated);
+  console.log("post final ", {...post}); 
   return { props: {...post, content: contentUpdated}};
 }
 
 export async function getStaticPaths() {
   const posts = getAllPosts()
+  
   return {
     paths: posts.map((post: any) => {
+      console.log(post);
       return {
         params: {
           slug: post.slug,
-          content: post.content,
+         
         },
       }
     }),
-    fallback: false,
+    fallback: true,
   }
 }
