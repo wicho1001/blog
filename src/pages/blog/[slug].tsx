@@ -49,12 +49,9 @@ const Post = (props) => {
 export default Post;
 
 export async function getStaticProps({ params }) {
-  //console.log("params: ",params);
   const post: any = getPost(params.slug);
   
   const contentUpdated: any = await markdownToHtml(post.content);
-  //console.log("content updated ", contentUpdated);
-  console.log("post final ", {...post}); 
   return { props: {...post, content: contentUpdated}};
 }
 
@@ -63,7 +60,6 @@ export async function getStaticPaths() {
   
   return {
     paths: posts.map((post: any) => {
-      console.log(post);
       return {
         params: {
           slug: post.slug,
