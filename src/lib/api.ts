@@ -20,28 +20,17 @@ export const getPost = (slug: string) => {
   const file = fs.readFileSync(fullPath, 'utf-8');
   const {content, data}: any = matter(file);
   const author = getAuthor(data.author);
-  console.log("blog ", { ...data, content, author: {...author} });
-  return {
+  return { 
     ...data,
     content,
     author:{
-        ...author
+    ...author
     }      
+        
   }
 }
 
 export const getAllPosts = () => {
- 
-  /* const posts = slugs
-    .map((slug) => getPost(slug)) */
-     console.log("posts ",getPostSlugs().map((post)=>{
-      return {
-          slug:post
-         
-      }
-      
-  })); 
-  
     return getPostSlugs().map((post)=>{
       return {
           slug:post
