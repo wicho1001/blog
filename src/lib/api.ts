@@ -21,14 +21,13 @@ export const getPost = (slug: string) => {
   const {content, data}: any = matter(file);
   const author = getAuthor(data.author);
   console.log("blog ", { ...data, content, author: {...author} });
-  return { 
-        ...data,
-        content,
-        author:{
-            ...author
-        }      
-        
-      }
+  return {
+    ...data,
+    content,
+    author:{
+        ...author
+    }      
+  }
 }
 
 export const getAllPosts = () => {

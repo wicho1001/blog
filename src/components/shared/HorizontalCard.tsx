@@ -9,9 +9,6 @@ const HorizontalCard = ({ props: {
   }}) => {
   return (
     <section className="flex h-100 py-6 px-4 shadow-md col-span-1 rounded-2 hover:bg-surface-100 bg-white cursor-pointer   transform transition duration-150 ease-in-out hover:scale-105 hover:-translate-y-1">
-    
-      
-       
         <img className="w-full object-cover rounded" src={featured_image} alt=""/>
         <div className="transform h-full w-px ml-2 border border-surface-300"></div>
         <section className="flex flex-col h-full overflow-y-auto mt-3 ml-4 ">
@@ -25,8 +22,7 @@ const HorizontalCard = ({ props: {
               <p className="font-rubik text-secondary-500 text-sm "><span className="text-surface-300">by</span> Wicho Guerrero</p>
             </div>
           </div>
-          </section>
-        
+        </section>
     </section>
   )
 }
