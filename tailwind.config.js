@@ -69,7 +69,9 @@ module.exports = {
       '4xl': '36px',
       '5xl': '48px',
       '6xl': '64px',
-      '7xl': '144px',
+      '7xl': '86px',
+      '8xl': '110px',
+      '9xl': '144px',
     },
     boxShadow: {
       default: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.6)',
@@ -208,7 +210,7 @@ module.exports = {
         '3/4': '75%',
         '1/2': '50%',
         '1/3': '33%',
-      }),
+      })
     },
     opacity: {
       '0': '0',
