@@ -1,7 +1,9 @@
 ---
-title: Mi super mega titulo
+title: Mi super mega titulo copy
 featured_image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJHnFru3UsC2AHddso0JPrKs6JVtQOpv5KjQ&usqp=CAU
-slug: php-is-the-worst
+slug: php-is-the-worst-copy
+fecha: 10-05-2020
+author: static/content/authors/jorge.md
 ---
 ### Hello world!
 ## Hello world!
