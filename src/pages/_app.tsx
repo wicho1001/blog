@@ -1,5 +1,6 @@
 import 'tailwindcss/tailwind.css';
 import '../styles/style.css';
+import '../styles/general.css';
 import Router from 'next/router';
 import withGa from 'next-ga';
 

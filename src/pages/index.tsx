@@ -53,26 +53,29 @@ function IndexPage(props) {
               </section> 
           </section>
 
-          <section className="h-container w-full relative mt-10">
-            <section className="flex-col space-y-10 w-4/5 mx-auto lg:grid lg:grid-cols-6 grid-rows-2 py-6 px-3 gap-6 mb-15">
-              <div className="flex flex-col row-span-1 col-span-6 bg-gradient-to-r from-transparent to-secondary-900 via-secondary-900 shadow-xl px-10 py-7  rounded-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer">
-                 <div className="flex items-center  lg:w-1/2 pb-3 flex-grow self-end">
-                  <p className="inline-flex  lg:px-9 lg:py-6 font-rubik text-primary-50 text-justify text-lg">We work with you to determine the ideal technology stack and design experience for your web, or cloud-based solution. We also ensure it is supported and maintained well after launch.</p>
+          <section className="w-full relative mt-10">
+            <section className="flex-col space-y-10 w-4/5 mx-auto lg:grid lg:grid-cols-6 py-6 px-3 gap-6 mb-15">
+              <section className="flex col-span-6 relative bg-secondary-900 shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer rounded-xl">
+                <img className="xs:hidden md:inline-block absolute card-image rounded-xl h-full" src="./unnamed.jpg" alt=""/>
+                <div className="flex flex-col justify-center xs:w-full md:w-9/12 ml-auto relative px-10 py-7 lg:px-30 lg:py-24">
+                  <p className="inline-flex font-rubik text-primary-50 text-justify text-lg font-thin">We work with you to determine the ideal technology stack and design experience for your web, or cloud-based solution. We also ensure it is supported and maintained well after launch.</p>
+                  <p className="text-primary-50 font-exo font-thin text-2xl mt-5">Design</p>
                 </div>
-                <p className="text-center md:w-1/2 text-primary-50 font-exo bold text-2xl self-center md:self-end">Design</p>
-              </div>
-              <div className="flex flex-col col-span-3  bg-gradient-to-r from-transparent to-secondary-900 via-secondary-900  px-10 py-7 shadow-xl rounded-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer">
-                  <div className="flex lg:w-1/2 pb-3 self-end ">
-                    <p className="justify-center text-primary-50 text-justify text-lg">We work with you to determine the ideal technology stack and design experience for your web, or cloud-based solution. We also ensure it is supported and maintained well after launch.</p>
-                  </div>
-                  <p className="text-center md:w-1/2 text-primary-50 font-exo text-2xl self-center md:self-end">Support</p>
-              </div>
-              <div className=" flex flex-col col-span-3 bg-gradient-to-r from-transparent to-secondary-900 via-secondary-900  px-10 py-7 shadow-xl rounded-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer">
-                  <div className="flex flex-col lg:w-1/2 pb-3 self-end">
-                    <p className="justify-center text-primary-50 text-justify text-lg">We work with you to determine the ideal technology stack and design experience for your web, or cloud-based solution. We also ensure it is supported and maintained well after launch.</p>
-                  </div>
-                  <p className="text-center md:w-1/2 text-primary-50 font-exo text-2xl self-center md:self-end">Development</p>
-              </div>
+              </section>
+              <section className="flex col-span-3 relative bg-secondary-900 shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer rounded-xl">
+                <img className="xs:hidden md:inline-block absolute card-image rounded-xl h-full w-3/5" src="./unnamed.jpg" alt=""/>
+                <div className="flex flex-col justify-center xs:w-full md:w-9/12 ml-auto relative px-10 py-7 lg:px-10 lg:py-8">
+                  <p className="inline-flex font-rubik text-primary-50 text-justify text-lg font-thin">We work with you to determine the ideal technology stack and design experience for your web, or cloud-based solution. We also ensure it is supported and maintained well after launch.</p>
+                  <p className="text-primary-50 font-exo font-thin text-2xl mt-5">Design</p>
+                </div>
+              </section>
+              <section className="flex col-span-3 relative bg-secondary-900 shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer rounded-xl">
+                <img className="xs:hidden md:inline-block absolute card-image rounded-xl h-full w-3/5" src="./unnamed.jpg" alt=""/>
+                <div className="flex flex-col justify-center xs:w-full md:w-9/12 ml-auto relative px-10 py-7 lg:px-10 lg:py-8">
+                  <p className="inline-flex font-rubik text-primary-50 text-justify text-lg font-thin">We work with you to determine the ideal technology stack and design experience for your web, or cloud-based solution. We also ensure it is supported and maintained well after launch.</p>
+                  <p className="text-primary-50 font-exo font-thin text-2xl mt-5">Design</p>
+                </div>
+              </section>
             </section>
           </section>
 
@@ -92,8 +95,6 @@ function IndexPage(props) {
                         <a href={"blog/"+post.slug} key={index}>
                          <HorizontalCard props={post}></HorizontalCard>
                         </a>
-                        
-                      
                     )
                   })
                 }
