@@ -1,3 +1,5 @@
+
+
 module.exports = {
   purge: ["./src/components/**/*.tsx", "./src/pages/*.tsx", "./src/pages/**/*.tsx"],
   theme: {
@@ -67,6 +69,9 @@ module.exports = {
       '4xl': '36px',
       '5xl': '48px',
       '6xl': '64px',
+      '7xl': '86px',
+      '8xl': '110px',
+      '9xl': '144px',
     },
     boxShadow: {
       default: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.6)',
@@ -205,7 +210,7 @@ module.exports = {
         '3/4': '75%',
         '1/2': '50%',
         '1/3': '33%',
-      }),
+      })
     },
     opacity: {
       '0': '0',
@@ -234,6 +239,9 @@ module.exports = {
       '2': '8',
       '3': '12'
     },
+    textFillColor: theme => theme('colors'),
+    textStrokeColor: theme => theme('colors'),
+    textStrokeWidth: theme => theme('spacing'),
   },
   variants: {
     accessibility: ['responsive', 'focus'],
@@ -347,9 +355,16 @@ module.exports = {
     transitionTimingFunction: ['responsive'],
     transitionDuration: ['responsive', 'hover', 'focus'],
     transitionDelay: ['responsive'],
-    animation: ['responsive','hover']
+    animation: ['responsive','hover'],
+    textFillColor: ['responsive'],
+    textStrokeColor: ['responsive'],
+    textStrokeWidth: ['responsive'],
   },
   future: {
     removeDeprecatedGapUtilities: true,
   },
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('tailwindcss-text-fill-stroke')(),
+  ]
 }
