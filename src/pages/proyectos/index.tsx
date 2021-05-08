@@ -1,8 +1,6 @@
 import React from 'react'
 import Layout from '../../components/shared/Layout';
-import Card from '../../components/shared/Card';
 import { getAllPosts, getPost } from '@/lib/api';
-import HorizontalCard from '../../components/shared/HorizontalCard';
 
 
 const Index = (props) => {

@@ -1,9 +1,7 @@
 import React from 'react';
 import Layout from '../components/shared/Layout';
-import { getAllPosts, getPost } from '@/lib/api';
 import Link from 'next/link'
 import fs from 'fs';
-import { join } from 'path';
 import matter from 'gray-matter';
 
 function IndexPage(props) {
