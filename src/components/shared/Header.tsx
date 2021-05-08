@@ -9,6 +9,7 @@ const Header = ({children}) => {
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
       <title>{children.Seo.title}</title>
+      <meta name="keywords" content={children.Seo.keywords.join(',')}></meta>
       <meta name="language" content="Spanish"/>
       <meta name="description" content={children.Seo.description} />
       <meta property="og:title" content={children.Seo.title}/>
