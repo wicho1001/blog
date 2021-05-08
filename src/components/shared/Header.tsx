@@ -3,7 +3,6 @@ import Head from 'next/head'
 
 
 const Header = ({children}) => {
-  console.log(children);
   return (
     <Head>
       <meta charSet="utf-8" />

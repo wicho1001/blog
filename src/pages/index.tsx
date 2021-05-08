@@ -7,7 +7,6 @@ import { join } from 'path';
 import matter from 'gray-matter';
 
 function IndexPage(props) {
-  console.log(props);
   return (
     <Layout props={props}>
       <section className="flex flex-col xs:w-10/12 2xl:w-8/12 mx-auto">
