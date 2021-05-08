@@ -13,7 +13,7 @@ function IndexPage(props) {
           <div className="flex flex-col md:items-start md:w-1/3 xs:w-full">
             <p className="font-bold text-4xl font-duru text-surface-800">{props.title}</p>
             <p className="text-lg font-rubik text-surface-800 mt-10">{props.description}</p>
-            <a href={'https://api.whatsapp.com/send?phone=%2B525529799846&text=Hola%2C+quisiera+saber+m%C3%A1s+acerca+de+sus+servicios.+Gracias%21'}
+            <a href={'https://api.whatsapp.com/send?phone=%2B525612993621&text=Hola%2C+quisiera+saber+m%C3%A1s+acerca+de+sus+servicios.+Gracias%21'}
               target="_blank" 
               className="px-6 py-4 font-bold font-duru bg-primary-700 text-white text-center rounded-2 mt-10 xs:w-full md:w-10/12 outline-none"
             >
