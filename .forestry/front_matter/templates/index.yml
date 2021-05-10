@@ -18,7 +18,28 @@ fields:
   type: field_group_list
   create: none
   fields: 
-  - [stage-fields]
+  - name: stage
+    type: field_group
+    create: none
+    config: {}
+    fields:
+    - name: title
+      type: text
+      config:
+        required: true
+      label: Title
+    - name: description
+      type: textarea
+      default: ''
+      config:
+        required: true
+      label: Descripcion
+    - name: image
+      type: file
+      config:
+        maxSize: 2
+      label: Image
+    label: Card
   label: lineas de negocio
   config: {}
 - name: seo
