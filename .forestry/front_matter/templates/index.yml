@@ -16,7 +16,7 @@ fields:
   default: ''
 - name: stages
   type: field_group_list
-  fields: 
+  fields:
   - name: title
     type: text
     config:
