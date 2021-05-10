@@ -8,20 +8,20 @@ image: ''
 stages:
 - title: Laboratorio
   permaLink: "/laboratorio"
-  image: "/lab_1.jpeg"
+  image: https://nemiliz.s3-us-west-2.amazonaws.com/lab_1.jpeg
   description: Somos un laboratorio especializado en biología molecular , interesados
     en la salud de nuestros pacientes y su bienestar. Con un servicio de calidad y
     enfocado a nuestros clientes como personas y no como un número más.
 - title: Construcción
   permaLink: "/"
-  image: "/lab_11.jpeg"
+  image: https://nemiliz.s3-us-west-2.amazonaws.com/lab_10.jpeg
   description: Somos una empresa interdisciplinaria dedicada al diseño, construcción
     y mejoramiento de instalaciones de salud. En especial, laboratorios de Biología
     Molecular. Siempre en busca de ventajas comerciales para nuestros clientes, con
     la mejor relación costo beneficio, y la optimización de tiempos de implementación.
 - title: Distribución
   permaLink: "/"
-  image: "/lab_13.jpeg"
+  image: https://nemiliz.s3-us-west-2.amazonaws.com/lab_11.jpeg
   description: Somos una empresa de vanguardia, en busca de las mejores tecnologías
     y productos para nuestros clientes. Nuestras alianzas comerciales, y tlrelacion
     directa con fabricantes nos permiten tener las mejores ofertas dentro del mercado
