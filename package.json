@@ -13,7 +13,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tailwindcss/typography": "^0.2.0",
     "disqus-react": "^1.0.10",
     "next": "^9.5.5",
     "next-ga": "^2.3.4",
@@ -30,7 +29,6 @@
     "remark-html": "^13.0.1",
     "remark-parse": "^9.0.0",
     "tailwindcss": "^1.9.5",
-    "tailwindcss-text-fill-stroke": "^1.1.2",
     "typescript": "^4.0.5",
     "unified": "^9.2.0",
     "uuid": "^8.3.1"

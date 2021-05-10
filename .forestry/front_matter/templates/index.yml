@@ -1,0 +1,47 @@
+---
+label: home
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: titulo
+  default: ''
+- name: description
+  type: textarea
+  config:
+    required: true
+  label: descripcion
+  default: ''
+- name: image
+  type: file
+  config:
+    maxSize: 2
+  label: Image
+- name: stages
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Title
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: true
+    label: Descripcion
+  - name: image
+    type: file
+    config:
+      maxSize: 2
+    label: Image
+  label: Cards
+  config: {}
+- name: seo
+  type: include
+  config: {}
+  template: seo-fields
+  label: SEO

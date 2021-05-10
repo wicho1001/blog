@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <section className="flex w-full justify-between pt-8 pb-5 mb-5 px-10 sticky bg-white top-0 z-9999 shadow">
       <Link href="/">
-        <div className="flex">
+        <div className="flex outline-none cursor-pointer">
           <img className="h-17 scale-125 transform" src="/nemiliz.png" alt="" />
           <div className="xs:hidden md:flex flex-col ml-4 font-bold text-xl font-duru text-primary-600">
             <p>Nemiliz</p>
@@ -23,10 +23,10 @@ const Navbar = () => {
       </Link>
       <ul className="flex">
         <Link href="/">
-          <p className={`text-lg mx-3 ${router.pathname === '/' ? className : null}`}>Inicio</p>
+          <p className={`text-lg mx-3 ${router.pathname === '/' ? className : null} cursor-pointer`}>Inicio</p>
         </Link>
         <Link href="/laboratorio">
-          <p className={`text-lg mx-3 ${router.pathname === '/laboratorio' ? className : null}`}>Laboratorio</p>
+          <p className={`text-lg mx-3 ${router.pathname === '/laboratorio' ? className : null} cursor-pointer`}>Laboratorio</p>
         </Link>
         {/* <Link href="/proyectos">
           <p className={`text-lg mx-3 ${router.pathname === '/proyectos' ? className : null}`}>Proyectos</p>
