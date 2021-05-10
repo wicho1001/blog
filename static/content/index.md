@@ -8,7 +8,7 @@ image: ''
 stages:
 - title: Laboratorio
   permaLink: "/laboratorio"
-  image: https://nemiliz.s3-us-west-2.amazonaws.com/lab_1.jpeg
+  image: https://nemiliz.s3-us-west-2.amazonaws.com/images/lab_1.jpeg
   description: Somos un laboratorio especializado en biología molecular , interesados
     en la salud de nuestros pacientes y su bienestar. Con un servicio de calidad y
     enfocado a nuestros clientes como personas y no como un número más.
