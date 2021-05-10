@@ -32,11 +32,15 @@ function IndexPage(props) {
             {
               props.stages.map((stage, index) => (
                 <Link href={stage.permaLink} key={index}>
-                  <div className="flex flex-col xs:w-full xs:my-6 md:my-0 md:w-1/4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer">
-                    <img className="w-full xs:h-70 md:h-60 rounded-2" src={stage.image} alt="" />
-                    <p className="text-lg font-duru font-bold text-surface-800 mt-6">{stage.title}</p>
-                    <p className="text-lg font-rubik text-surface-800 mt-6 break-words">{stage.description}</p>
+                  <div className="flex flex-col px-7 py-5 rounded-2 xs:w-full xs:my-6 md:my-0 md:w-1/4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer hover:bg-surface-100">
+                    <div className="flex flex-col flex-grow">
+                      <img className="w-full xs:h-70 md:h-60 rounded-2" src={stage.image} alt="" />
+                      <p className="text-lg font-duru font-bold text-surface-800 mt-6">{stage.title}</p>
+                      <p className="text-lg font-rubik text-surface-800 mt-6 break-words">{stage.description}</p>
+                    </div>
+                    <i className="icon-arrow-right2 mt-6 self-end text-xl"></i>
                   </div>
+
                 </Link>
               ))
             }
