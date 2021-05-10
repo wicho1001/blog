@@ -1,0 +1,30 @@
+---
+label: SEO Fields
+hide_body: true
+fields:
+- name: stage
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Title
+  - name: permaLink
+    type: text
+    config:
+      required: false
+    label: direccion
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: true
+    label: Descripcion
+  - name: image
+    type: file
+    config:
+      maxSize: 2
+    label: Image
+  label: Card
