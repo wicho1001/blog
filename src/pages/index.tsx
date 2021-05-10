@@ -21,7 +21,7 @@ function IndexPage(props) {
             </a>
           </div>
           <div className="self-end relative xs:mt-10 md:mt-0">
-            <img className="z-3 h-150 w-150 2xl:w-full 2xl:h-3/4 rounded-2" src="https://picsum.photos/600/600" alt="" />
+            <img className="z-3 h-150 w-150 2xl:w-full 2xl:h-3/4 rounded-2" src={props.image} alt="" />
             <div className="h-150 w-150 xs:hidden md:block md:absolute bg-secondary-500 right-0 bottom-0 -mr-20 -z-1 -mb-10 rounded-2"></div>
           </div>
         </section>
@@ -33,7 +33,7 @@ function IndexPage(props) {
               props.stages.map((stage, index) => (
                 <Link href={stage.permaLink} key={index}>
                   <div className="flex flex-col xs:w-full xs:my-6 md:my-0 md:w-1/4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer">
-                    <img className="w-full xs:h-70 md:h-60 rounded-2" src="https://picsum.photos/200/200" alt="" />
+                    <img className="w-full xs:h-70 md:h-60 rounded-2" src={stage.image} alt="" />
                     <p className="text-lg font-duru font-bold text-surface-800 mt-6">{stage.title}</p>
                     <p className="text-lg font-rubik text-surface-800 mt-6 break-words">{stage.description}</p>
                   </div>
