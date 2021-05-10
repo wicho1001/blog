@@ -1,16 +1,16 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: static/admin
+admin_path: public/static/admin
 webhook_url: 
 sections:
 - type: document
-  path: static/content/index.md
+  path: public/static/content/index.md
   label: Inicio
   templates:
   - index
 - type: document
-  path: static/content/laboratorio.md
+  path: public/static/content/laboratorio.md
   label: laboratorio
   templates:
   - index
@@ -20,7 +20,7 @@ front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
 build:
-  preview_output_directory: static/admin
+  preview_output_directory: public/static/admin
   install_dependencies_command: npm install
   preview_docker_image: forestryio/node:12
   mount_path: "/srv"

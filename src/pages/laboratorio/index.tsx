@@ -48,7 +48,7 @@ const Index = (props) => {
 export default Index
 
 export async function getStaticProps(params: any) {
-  const file = fs.readFileSync('static/content/laboratorio.md', 'utf-8');
+  const file = fs.readFileSync('public/static/content/laboratorio.md', 'utf-8');
   const {content, data}: any = matter(file);
   const props = {
     props: {
