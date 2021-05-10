@@ -31,7 +31,7 @@ seo:
   title: Nemiliz
   description: Nemiliz Diagnostics es una empresa que brinda una experiencia de calidad
     a nuestros clientes con un servicio profesional en Biología Molecular
-  image: nemiliz.png
+  image: https://nemiliz.s3-us-west-2.amazonaws.com/images/logo azul.png
   keywords:
   - Biología molecular
 
