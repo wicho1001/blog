@@ -15,7 +15,7 @@ fields:
   label: descripcion
   default: ''
 - name: stages
-  type: include
+  type: field_group_list
   template: stage-fields
   label: lineas de negocio
   config: {}
