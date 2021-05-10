@@ -4,7 +4,7 @@ description: Nemiliz Diagnostics es una empresa 100% mexicana comprometida con e
   significado de su nombre a saber, con la “vida”. Nuestra finalidad es brindar una
   experiencia de calidad a nuestros clientes y socios de negocios mediante un servicio
   profesional en Biología Molecular
-image: ''
+image: https://nemiliz.s3-us-west-2.amazonaws.com/images/lab_12.jpeg
 stages:
 - title: Laboratorio
   permaLink: "/laboratorio"
