@@ -15,7 +15,7 @@ sections:
   templates:
   - index
 upload_dir: images
-public_path: https://nemiliz.s3-us-west-2.amazonaws.com
+public_path: https://nemiliz.s3-us-west-2.amazonaws.com/images
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
