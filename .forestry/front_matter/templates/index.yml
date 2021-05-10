@@ -16,7 +16,9 @@ fields:
   default: ''
 - name: stages
   type: field_group_list
-  template: stage-fields
+  create: none
+  fields: 
+  - [stage-fields]
   label: lineas de negocio
   config: {}
 - name: seo
