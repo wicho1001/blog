@@ -19,7 +19,7 @@ const Index = (props) => {
             </a>
           </div>
           <div className="self-end relative xs:mt-10 md:mt-0">
-            <img className="z-3 h-150 w-150 2xl:w-full 2xl:h-3/4 rounded-2" src={props.image} alt="" />
+            <img className="z-3 h-150 w-150 object-cover rounded-2" src={props.image} alt="" />
           </div>
         </section>
         <section className="flex flex-col mt-30">
@@ -31,7 +31,7 @@ const Index = (props) => {
                 <div className="flex xs:flex-col md:flex-row items-center xs:my-10 md:my-5" key={index}>
                   <img className="z-3 xs:h-60 md:h-45 md:w-45 xs:w-full rounded-2" src={stage.image} alt="" />
                   <div className="flex flex-col md:ml-6 w-full">
-                    <p className="font-bold text-2xl font-duru text-primary-600">Etapa {index}: {stage.title}</p>
+                    <p className="font-bold text-2xl font-duru text-primary-600">Etapa {index + 1}: {stage.title}</p>
                     <p className="text-lg font-rubik text-primary-600 mt-6">{stage.description}</p>
                   </div>
                 </div>

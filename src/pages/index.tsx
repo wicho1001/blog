@@ -21,18 +21,18 @@ function IndexPage(props) {
             </a>
           </div>
           <div className="self-end relative xs:mt-10 md:mt-0">
-            <img className="z-3 h-150 w-150 2xl:w-full 2xl:h-3/4 rounded-2" src={props.image} alt="" />
+            <img className="z-3 h-150 w-150 rounded-2 object-cover" src={props.image} alt="" />
             <div className="h-150 w-150 xs:hidden md:block md:absolute bg-secondary-500 right-0 bottom-0 -mr-20 -z-1 -mb-10 rounded-2"></div>
           </div>
         </section>
         {/* End home */}
         <section className="flex flex-col mt-30">
           <p className="text-4xl font-bold self-center">Acerca de nosotros</p>
-          <section className="flex xs:flex-col md:flex-row justify-around w-full mt-10">
+          <section className="grid xs:grid-cols-1 md:grid-cols-3 gap-6 justify-around w-full mt-10">
             {
               props.stages.map((stage, index) => (
                 <Link href={stage.permaLink} key={index}>
-                  <div className="flex flex-col px-7 py-5 rounded-2 xs:w-full xs:my-6 md:my-0 md:w-1/4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer hover:bg-surface-100">
+                  <div className="flex flex-col px-7 py-5 rounded-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer hover:bg-surface-100">
                     <div className="flex flex-col flex-grow">
                       <img className="w-full xs:h-70 md:h-60 rounded-2" src={stage.image} alt="" />
                       <p className="text-lg font-duru font-bold text-surface-800 mt-6">{stage.title}</p>
